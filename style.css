@@ -11,6 +11,32 @@ html {
 }
 a {
   text-decoration: none;
+  color: whitesmoke;
+}
+ul {
+  list-style: none;
+}
+.active {
+  color: #fc036b;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 30px;
 }
 header {
   width: 100vw;
@@ -48,31 +74,6 @@ header {
   border-radius: 30px;
   color: whitesmoke;
 }
-.navbar {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  justify-content: space-between;
-  padding: 20px;
-  color: whitesmoke;
-}
-ul {
-  list-style: none;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-.nav-links li {
-  margin: 0 30px;
-}
-.active {
-  color: #fc036b;
-  text-decoration: underline;
-  font-weight: bold;
-}
 .menu-btn {
   position: absolute;
   top: 30px;
@@ -100,6 +101,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.col-img {
+  width: 90%;
 }
 .events .row {
   margin-top: 50px;
@@ -178,7 +182,7 @@ p {
   margin-left: -100px;
 }
 .footer {
-  width: 1005;
+  width: 100%;
   min-height: 100px;
   padding: 20px 80px;
   margin: 0;
